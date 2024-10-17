@@ -1,0 +1,30 @@
+                CADASTRO 
+____________________________________________   
+|id_empresa |  razão_social  | data_cadastro|
+---------------------------------------------
+|4          | Faculdade J SA | 20/10/2020   |
+|55         | Industria SA   | 10/01/2019   |
+|300        | Comércio SA    | 01/01/2021   |
+____________________________________________
+
+
+
+a)SELECT * FROM Cadastro WHERE
+id_empresa < 55
+
+Resultado:
+____________________________________________   
+|id_empresa |  razão_social  | data_cadastro|
+|4          | Faculdade J SA | 20/10/2020   |
+_____________________________________________
+
+
+b)SELECT razao_social, data_cadastro
+From Cadastro WHERE data_cadastro > '2019-04-03';
+
+Resultado:
+_________________________________
+|  razão_social  | data_cadastro|
+| Faculdade J SA | 20/10/2020   |
+| Comércio SA    | 01/01/2021   |
+_________________________________
